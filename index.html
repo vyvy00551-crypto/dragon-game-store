@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Game Store - Cửa Hàng Game Ngọc Rồng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-dragon"></i>
+                <span>Dragon Game Store</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#about">Về Chúng Tôi</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>🐉 DRAGON GAME STORE</h1>
+            <p>Cửa Hàng Game Ngọc Rồng Uy Tín Số 1 Việt Nam</p>
+            <p class="subtitle">Các Sản Phẩm Game Chất Lượng - Giá Tốt Nhất</p>
+            <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                Mua Ngay
+            </button>
+        </div>
+        <div class="hero-bg">
+            <div class="floating-dragon">🐉</div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">🎮 Sản Phẩm Của Chúng Tôi</h2>
+            
+            <!-- Filter -->
+            <div class="filter">
+                <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                <button class="filter-btn" data-filter="account">Tài Khoản</button>
+                <button class="filter-btn" data-filter="card">Thẻ Nạp</button>
+                <button class="filter-btn" data-filter="gift">Giftcode</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsContainer">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🛒 Giỏ Hàng Của Bạn</h2>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-summary">
+                <p>Tổng Cộng: <strong id="cartTotal">0đ</strong></p>
+                <button class="btn btn-primary" id="checkoutBtn">Thanh Toán</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">📖 Về Chúng Tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Tại Sao Chọn Dragon Game Store?</h3>
+                    <ul class="features">
+                        <li>✅ Sản phẩm chính hãng 100%</li>
+                        <li>✅ Giá cạnh tranh, ưu đãi hàng ngày</li>
+                        <li>✅ Giao dịch nhanh chóng, an toàn</li>
+                        <li>✅ Hỗ trợ khách hàng 24/7</li>
+                        <li>✅ Đảm bảo hoàn tiền nếu không hài lòng</li>
+                        <li>✅ Cập nhật sản phẩm mới hàng tuần</li>
+                    </ul>
+                </div>
+
